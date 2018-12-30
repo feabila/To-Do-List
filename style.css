@@ -1,0 +1,138 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    line-height: normal;
+    letter-spacing: normal;
+    
+    font-family: Lato, "sans-serif";
+    font-weight: 400;
+}
+p {font-size: 1em;}
+
+/*BODY*/
+body {
+    background-color: #ege;
+}
+
+/*HEADER*/
+header {
+    width: 100%; 
+    height: 100px;
+    margin-top: 25px;
+    text-align:center;
+    margin-bottom: 20px;
+}
+header h2 {
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+/*Triggers for ALL*/
+.small {font-size: 0.825em;}
+.clear {clear: both;}
+.title-list {margin: 7px 0 7px 5%; font-size: 17px; font-weight: bold;}
+.small-warning {margin-left: 10px; font-size: 0.825em; color: #FF4A48;}
+
+/*MEDIA Queries*/
+@media screen and (min-width: 1300px) and (max-width: 1500px){
+     /*Add Item*/
+     ul#itemList {
+        float: left;
+        margin-bottom: 20px;
+        margin-left: 500px;
+    }
+}
+@media screen and (min-width: 1100px) and (max-width: 1300px){
+    /*Add Item*/
+    ul#itemList {
+        float: left;
+        margin-bottom: 20px;
+        margin-left: 450px;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 1100px){
+    /*Add Item*/
+    ul#itemList {
+        float: left;
+        margin-bottom: 20px;
+        margin-left: 300px;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 800px) {
+    /*Add Item*/
+    ul#itemList {
+        float: left;
+        margin-bottom: 20px;
+        margin-left: 200px;
+    }          
+}
+@media screen and (min-width: 450px) and (max-width: 600px){
+    /*Add Item*/
+    ul#itemList {
+        float: left;
+        margin-bottom: 20px;
+        margin-left: 70px;
+    }       
+}
+@media screen and (max-width: 450px){
+     /*Add Item*/
+     ul#itemList {
+        float: left;
+        margin-bottom: 20px;
+        margin-left: 30px;
+    }       
+}
+
+/*Add Item ALL SIZES*/
+div#addItem {
+    width: 100%;
+    margin-bottom: 15px;
+}
+ul#itemList input#newItem {
+    font-size: 16px;
+    text-align: center;
+    outline: 0;
+    color: #888;
+    border: 0;
+    border-bottom: 2px solid #bbb;
+}
+ul#itemList input#newItem::placeholder{
+    color: #ccc;
+}
+ul#itemList li{
+    display: inline-block;
+    margin-left: 3px;
+}
+ul#itemList button {
+    padding: 3px 5px 3px 5px;
+    margin-left: 40px;
+    background-color: #FF4A48;
+    color: #fff;
+    border: 2px solid rgb(228, 85, 83);
+    border-radius: 3px;
+}
+ul#itemList button:hover {
+    cursor: pointer;
+}
+
+/*List Items ALL SIZES*/
+div#list ol.listItem{
+    margin: 15px 0 15px 12.5%;
+}
+div#list ol.listItem li{
+    background-color: #fff;
+    padding:1px 0 1px 5px;
+    text-decoration: none;
+    transition: background-color 1s;
+}
+div#list ol.listItem li:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+/*Footer*/
+footer {
+    margin-top: 15px;
+    text-align: center;
+}
